@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search"
+        android:title="Search"
+        android:iconTint="@color/black"
+        app:showAsAction="always|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        app:showAsAction="always"
+        android:icon="@drawable/ic_menu"
+        android:id="@+id/overflowMenu"
+        android:title="">
+        <menu>
+            <item
+                android:icon="@drawable/ic_logout"
+                android:id="@+id/logout"
+                android:title="Logout"
+                />
+            <item
+                android:icon="@drawable/ic_settings"
+                android:id="@+id/settings"
+                android:title="Settings"/>
+            <item
+                android:icon="@drawable/ic_group"
+                android:title="Group Chat"
+                android:id="@+id/groupChat"/>
+        </menu>
+    </item>
+
+</menu>
